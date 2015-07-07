@@ -37,7 +37,7 @@ class JobYAMLCodec {
             TreeSet options = new TreeSet()
             data.options.keySet().each{ optname ->
                 Option opt = Option.fromMap(optname, data.options[optname])
-                options<<opt
+                options << opt
             }
             se.options = options
         }
